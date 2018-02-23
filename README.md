@@ -64,7 +64,7 @@ YAML example:
 ---
 properties:
   name: 'Product Name'
-  description: 'Product Decription'
+  description: 'Product Description'
   audience: 'service'
   subcollection: 'Product'
   href: '/docs/services/productName/index.html'

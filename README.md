@@ -34,7 +34,7 @@ marked-it-cli <sourceDirectory> --output=<destinationDirectory> [OPTIONS]
 --disable-front-matter
 	Disable processing of Jekyll-style front matter blocks
 --toc-xml
-	Generate a toc.xml file for directories containing a valid toc file
+	Generate a toc.xml file for directories containing a valid toc file.
 --toc-depth=<maxHeaderLevel>
 	Set the maximum header level that will appear in toc files (default=3)
 --verbose
@@ -51,6 +51,41 @@ marked-it-cli <sourceDirectory> --output=<destinationDirectory> [OPTIONS]
 	Path to the file with content to be appended to the generated .html
 --conref-file=<conrefFile>
 	Path to the file containing DITA-style variable definitions
+```
+
+
+### toc format
+
+A toc file can be provided in text format in a file called `toc` with no extension, or as a YAML formatted file, `toc.yml`.
+
+YAML example:
+
+```
+---
+properties:
+  name: 'Product Name'
+  description: 'Product Decription'
+  audience: 'service'
+  subcollection: 'Product'
+  href: '/docs/services/productName/index.html'
+navgroups:
+  learn:
+    - index.md
+  howto:
+    - installing.md
+	- configuring.md
+  reference:
+	- referenceTopic.md
+    - external:
+        title: External Link Example
+        url: https://www.ibm.com
+  help:
+    - topicgroup:
+        title: Topicgroup Example
+        topics:
+          - subdirectory/subtopic1.md
+          - subdirectory/subtopic2.md
+
 ```
 
 ## PDF Generation

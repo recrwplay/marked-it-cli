@@ -1,16 +1,16 @@
 {
 	"name": "marked-it-cli",
-	"description": "A CLI for marked-it.  Performs markdown->HTML and (optionally) TOC generation for a collection of markdown source files.",
+	"description": "A fork of CLI for marked-it.  Performs markdown->HTML and (optionally) TOC generation for a collection of markdown source files.",
 	"version": "0.9.1",
-	"author": "Grant Gayed <grant_gayed@ca.ibm.com>",
+	"author": "Neil Dewhurst <ndewhurs@uk.ibm.com>",
 	"license": "MIT",
-	"homepage": "https://github.com/grant-g/marked-it-cli",
-	"bugs": "https://github.com/grant-g/marked-it-cli/issues",
+	"homepage": "https://github.com/recrwplay/marked-it-cli",
+	"bugs": "https://github.com/recrwplay/marked-it-cli/issues",
 	"keywords": ["markdown", "html", "marked-it", "toc", "pdf"],
 
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/grant-g/marked-it-cli.git"
+		"url": "https://github.com/recrwplay/marked-it-cli.git"
 	},
 	"bin": {
 		"marked-it-cli": "bin/marked-it-cli"
@@ -24,6 +24,7 @@
 		"pretty-data": "0.40.0",
 		"js-beautify": "1.6.4",
 		"fs-extra": "1.0.0",
-		"highlight.js": "9.12.0"
+		"highlight.js": "9.12.0",
+		"xmlbuilder": "9.0.7"
 	}
 }

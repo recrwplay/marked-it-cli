@@ -73,9 +73,9 @@ navgroups:
     - index.md
   howto:
     - installing.md
-	- configuring.md
+    - configuring.md
   reference:
-	- referenceTopic.md
+    - referenceTopic.md
     - external:
         title: External Link Example
         url: https://www.ibm.com
@@ -85,7 +85,6 @@ navgroups:
         topics:
           - subdirectory/subtopic1.md
           - subdirectory/subtopic2.md
-
 ```
 
 ## PDF Generation
